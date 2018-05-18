@@ -2,8 +2,9 @@
 An open source and free screen pixel ruler based on .NET that is a clone of *MioPlanet PixelRuler*.
 
 ## Installation
-* Software Installer: [Releases Page](https://github.com/Cossey/screenpixelruler/releases)
-* Chocolatey Package Manager: `choco install screenpixelruler` **_Coming Soon_**
+[`choco install screenpixelruler`](https://www.chocolatey.org/about)
+
+*or download the software installer from the [Releases Page](https://github.com/Cossey/screenpixelruler/releases)*
 
 ## How to Use
 * Click and Drag the ruler to move it. 
