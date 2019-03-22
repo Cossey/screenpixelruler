@@ -25,7 +25,7 @@ Public Class frmRuler
         Dim p As Point = Me.PointToClient(MousePosition)
         Dim Pos = 0
 
-        If Me.Width > Me.Height Then
+        If IsHorzontal() Then
             Pos = p.X
             If FreezeCursorPos Then Pos = CursorLastPos
             g.DrawLine(New Pen(Color.White, 1), Pos, Me.Height, Pos, 0)
@@ -78,7 +78,7 @@ Public Class frmRuler
         Dim MaxWidth = Me.Width
 
         'Dim OffsetSpace = 0
-        If Me.Width > Me.Height Then
+        If IsHorzontal() Then
             Dim FixOffsetSpace = HorizontalSpacing
             If HorizontalSpacing >= 20 Then
                 FixOffsetSpace = 0
@@ -174,7 +174,7 @@ Public Class frmRuler
     'Draws the Background
     Sub PaintBackground(ByVal g As Graphics)
         Dim lgm As LinearGradientMode = LinearGradientMode.Horizontal
-        If Me.Width > Me.Height Then lgm = LinearGradientMode.Vertical
+        If IsHorzontal() Then lgm = LinearGradientMode.Vertical
         Using br As LinearGradientBrush = New LinearGradientBrush(New Rectangle(0, 0, Me.Width, Me.Height), Color.FromArgb(145, 212, 255), Color.FromArgb(0, 130, 254), lgm)
             g.FillRectangle(br, 0, 0, Me.Width, Me.Height)
         End Using
@@ -187,13 +187,15 @@ Public Class frmRuler
         PaintCursorPosition(e.Graphics, FlipDirection)
     End Sub
 
-
+    Protected Function IsHorzontal() As Boolean
+        Return Me.Width > Me.Height
+    End Function
 
     'Update Ruler Size and Cursor Position
     Private Sub tmrPosition_Tick(sender As Object, e As EventArgs) Handles tmrPosition.Tick
         Dim p As Point = Me.PointToClient(MousePosition)
 
-        If Me.Width > Me.Height Then 'Horzontal Ruler
+        If IsHorzontal() Then
             Dim XPos = p.X
             If FreezeCursorPos Then XPos = CursorLastPos
             If XPos >= 620 And XPos < MaxWidth Then
@@ -238,36 +240,40 @@ Public Class frmRuler
 
     End Sub
 
+    Protected Sub PositionRuler(hPos As Integer, vPos As Integer)
+        If IsHorzontal() Then
+            Me.Left = vPos - 10
+        Else
+            Me.Top = hPos - 20
+        End If
+    End Sub
+
+    Protected Sub CopySizeToClipboard()
+        Dim p As Point = Me.PointToClient(MousePosition)
+        If IsHorzontal() Then
+            Clipboard.SetText((p.X - HorizontalSpacing))
+        Else
+            Clipboard.SetText((p.Y - VerticalSpacing))
+        End If
+    End Sub
+
     'Process Shortcuts
     Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
-        If keyData = (Keys.Control Or Keys.S) Then
-            If Me.Width > Me.Height Then
-                Me.Left = MousePosition.X - 10
-            Else
-                Me.Top = MousePosition.Y - 20
-            End If
+        If keyData = (Keys.Control Or Keys.S) Then PositionRuler(MousePosition.X, MousePosition.Y)
+        If keyData = (Keys.Control Or Keys.F) Then FreezeCursorPos = Not FreezeCursorPos
+        If keyData = (Keys.Control Or Keys.X) Then Application.Exit()
+        If keyData = (Keys.Control Or Keys.R) Then Rotate()
+        If keyData = (Keys.Control Or Keys.D) Then FlipDirection = Not FlipDirection
+        If keyData = (Keys.Control Or Keys.E) Then PositionRuler(0, 0)
+        If keyData = (Keys.Control Or Keys.C) Then CopySizeToClipboard()
 
-            Return True
-        End If
-        If keyData = (Keys.Control Or Keys.F) Then
-            FreezeCursorPos = Not FreezeCursorPos
-        End If
-        If keyData = (Keys.Control Or Keys.X) Then
-            Application.Exit()
-        End If
-        If keyData = (Keys.Control Or Keys.R) Then
-            Rotate()
-        End If
-        If keyData = (Keys.Control Or Keys.E) Then
-            FlipDirection = Not FlipDirection
-        End If
         Return MyBase.ProcessCmdKey(msg, keyData)
     End Function
 
     'Rotate Ruler 90 degrees
     Private Sub Rotate()
         Dim Pos
-        If Me.Width > Me.Height Then
+        If IsHorzontal() Then
             Pos = New Size(40, 440)
             CursorLastPos += VerticalSpacing
             CursorLastPos -= HorizontalSpacing
