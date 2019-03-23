@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.ScreenPixelRuler.frmRuler
+            Me.MainForm = Global.ScreenPixelRuler.RulerForm
         End Sub
     End Class
 End Namespace

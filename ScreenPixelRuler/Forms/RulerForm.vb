@@ -1,7 +1,7 @@
 ﻿
 Imports System.Drawing.Drawing2D
 
-Public Class frmRuler
+Public Class RulerForm
 
 
     Dim HorizontalSpacing = 10
@@ -341,6 +341,6 @@ Public Class frmRuler
     End Sub
 
     Private Sub MenuAbout_Click(sender As Object, e As EventArgs) Handles MenuAbout.Click
-        frmAbout.Show()
+        AboutForm.Show()
     End Sub
 End Class
