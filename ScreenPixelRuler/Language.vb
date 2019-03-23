@@ -11,11 +11,14 @@ Module Language
     End Function
 
     Sub SetNativeDialogLanguage()
-        MessageBoxManager.No = My.Resources.No
-        MessageBoxManager.Yes = My.Resources.Yes
-        MessageBoxManager.OK = My.Resources.Ok
-        MessageBoxManager.Cancel = My.Resources.Cancel
-        MessageBoxManager.Register()
+        NativeDialogHandler.No = My.Resources.No
+        NativeDialogHandler.Yes = My.Resources.Yes
+        NativeDialogHandler.OK = My.Resources.Ok
+        NativeDialogHandler.Cancel = My.Resources.Cancel
+        NativeDialogHandler.AddToCustomColours = My.Resources.AddToCustomColours
+        NativeDialogHandler.DefineCustomColours = My.Resources.DefineCustomColours
+        NativeDialogHandler.Colour = My.Resources.Colour
+        NativeDialogHandler.Register()
     End Sub
 
 End Module

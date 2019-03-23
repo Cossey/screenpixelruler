@@ -61,7 +61,34 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Cancel.
+        '''  Looks up a localized string similar to &amp;Add to Custom Colours.
+        '''</summary>
+        Friend ReadOnly Property AddToCustomColours() As String
+            Get
+                Return ResourceManager.GetString("AddToCustomColours", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &amp;Basic colours:.
+        '''</summary>
+        Friend ReadOnly Property BasicColours() As String
+            Get
+                Return ResourceManager.GetString("BasicColours", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Bl&amp;ue.
+        '''</summary>
+        Friend ReadOnly Property Blue() As String
+            Get
+                Return ResourceManager.GetString("Blue", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &amp;Cancel.
         '''</summary>
         Friend ReadOnly Property Cancel() As String
             Get
@@ -88,7 +115,43 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to No.
+        '''  Looks up a localized string similar to Colour.
+        '''</summary>
+        Friend ReadOnly Property Colour() As String
+            Get
+                Return ResourceManager.GetString("Colour", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &amp;Custom colours:.
+        '''</summary>
+        Friend ReadOnly Property CustomColours() As String
+            Get
+                Return ResourceManager.GetString("CustomColours", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Define Custo&amp;m Colours &gt;&gt;.
+        '''</summary>
+        Friend ReadOnly Property DefineCustomColours() As String
+            Get
+                Return ResourceManager.GetString("DefineCustomColours", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &amp;Green.
+        '''</summary>
+        Friend ReadOnly Property Green() As String
+            Get
+                Return ResourceManager.GetString("Green", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &amp;No.
         '''</summary>
         Friend ReadOnly Property No() As String
             Get
@@ -97,11 +160,20 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to OK.
+        '''  Looks up a localized string similar to &amp;OK.
         '''</summary>
         Friend ReadOnly Property Ok() As String
             Get
                 Return ResourceManager.GetString("Ok", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &amp;Red.
+        '''</summary>
+        Friend ReadOnly Property Red() As String
+            Get
+                Return ResourceManager.GetString("Red", resourceCulture)
             End Get
         End Property
         
@@ -116,7 +188,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Yes.
+        '''  Looks up a localized string similar to &amp;Yes.
         '''</summary>
         Friend ReadOnly Property Yes() As String
             Get

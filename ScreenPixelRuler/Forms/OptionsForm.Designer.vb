@@ -207,6 +207,7 @@ Partial Class OptionsForm
         'ColourPickerDialog
         '
         Me.ColourPickerDialog.AnyColor = True
+        Me.ColourPickerDialog.FullOpen = True
         '
         'OptionsForm
         '

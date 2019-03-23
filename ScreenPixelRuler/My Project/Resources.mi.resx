@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddToCustomColours" xml:space="preserve">
+    <value>Tāpiri ki nga Tae Ritenga</value>
+  </data>
+  <data name="BasicColours" xml:space="preserve">
+    <value>Tae taketake:</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Kikorangi</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Waiho</value>
+    <value>&amp;Waiho</value>
   </data>
   <data name="ChangeLangageTitle" xml:space="preserve">
     <value>Reo</value>
@@ -126,13 +135,28 @@
   <data name="ChangeLanguageMessage" xml:space="preserve">
     <value>Me tīmata anō koe i te tono ki te huri i te reo. Tīmata anō inaianei?</value>
   </data>
+  <data name="Colour" xml:space="preserve">
+    <value>Tae</value>
+  </data>
+  <data name="CustomColours" xml:space="preserve">
+    <value>Rae ritenga:</value>
+  </data>
+  <data name="DefineCustomColours" xml:space="preserve">
+    <value>Tautuhia nga Tae Ritenga &gt;&gt;</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Kākāriki</value>
+  </data>
   <data name="No" xml:space="preserve">
-    <value>Kāo</value>
+    <value>Kā&amp;o</value>
   </data>
   <data name="Ok" xml:space="preserve">
-    <value>Ka Pai</value>
+    <value>&amp;Ka Pai</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Whero</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Āe</value>
+    <value>Ā&amp;e</value>
   </data>
 </root>
