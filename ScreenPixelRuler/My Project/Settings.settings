@@ -8,5 +8,14 @@
     <Setting Name="PositionOffset" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="RulerColour1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">145, 212, 255</Value>
+    </Setting>
+    <Setting Name="RulerColour2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">0, 130, 254</Value>
+    </Setting>
+    <Setting Name="RulerTickColour" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

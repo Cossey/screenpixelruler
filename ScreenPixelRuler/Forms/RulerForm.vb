@@ -88,7 +88,7 @@ Public Class RulerForm
             centerFormat.LineAlignment = StringAlignment.Center
             If FlipDirection Then
                 For I As Integer = HorizontalSpacing To (Me.Width - HorizontalSpacing) Step 2
-                    Dim P As Pen = New Pen(Color.Black, 1)
+                    Dim P As Pen = New Pen(My.Settings.RulerTickColour, 1)
                     Dim High As Integer = 10
                     If I Mod 20 = FixOffsetSpace Then High = 15
                     If I Mod 100 = HorizontalSpacing And (I - HorizontalSpacing) <> 0 Then
@@ -105,7 +105,7 @@ Public Class RulerForm
             Else
 
                 For I As Integer = HorizontalSpacing To (Me.Width - HorizontalSpacing) Step 2 '2529 Step 2
-                    Dim P As Pen = New Pen(Color.Black, 1)
+                    Dim P As Pen = New Pen(My.Settings.RulerTickColour, 1)
                     Dim High As Integer = 10
                     If I Mod 20 = HorizontalSpacing Then High = 15
                     If I Mod 100 = HorizontalSpacing And (I - HorizontalSpacing) <> 0 Then
@@ -133,7 +133,7 @@ Public Class RulerForm
                 leftFormat.LineAlignment = StringAlignment.Near
 
                 For I As Integer = VerticalSpacing To (Me.Height - VerticalSpacing) Step 2
-                    Dim P As Pen = New Pen(Color.Black, 1)
+                    Dim P As Pen = New Pen(My.Settings.RulerTickColour, 1)
                     Dim Wide As Integer = 10
                     If I Mod 20 = FixOffsetSpace Then Wide = 15
                     If I Mod 100 = VerticalSpacing And (I - VerticalSpacing) <> 0 Then
@@ -152,7 +152,7 @@ Public Class RulerForm
                 rightFormat.Alignment = StringAlignment.Far
                 rightFormat.LineAlignment = StringAlignment.Far
                 For I As Integer = VerticalSpacing To (Me.Height - VerticalSpacing) Step 2
-                    Dim P As Pen = New Pen(Color.Black, 1)
+                    Dim P As Pen = New Pen(My.Settings.RulerTickColour, 1)
                     Dim Wide As Integer = 10
                     If I Mod 20 = FixOffsetSpace Then Wide = 15
                     If I Mod 100 = VerticalSpacing And (I - VerticalSpacing) <> 0 Then
@@ -175,7 +175,7 @@ Public Class RulerForm
     Sub PaintBackground(ByVal g As Graphics)
         Dim lgm As LinearGradientMode = LinearGradientMode.Horizontal
         If IsHorzontal() Then lgm = LinearGradientMode.Vertical
-        Using br As LinearGradientBrush = New LinearGradientBrush(New Rectangle(0, 0, Me.Width, Me.Height), Color.FromArgb(145, 212, 255), Color.FromArgb(0, 130, 254), lgm)
+        Using br As LinearGradientBrush = New LinearGradientBrush(New Rectangle(0, 0, Me.Width, Me.Height), My.Settings.RulerColour1, My.Settings.RulerColour2, lgm)
             g.FillRectangle(br, 0, 0, Me.Width, Me.Height)
         End Using
     End Sub

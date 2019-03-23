@@ -77,6 +77,42 @@ Namespace My
                 Me("PositionOffset") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("145, 212, 255")>  _
+        Public Property RulerColour1() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("RulerColour1"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("RulerColour1") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0, 130, 254")>  _
+        Public Property RulerColour2() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("RulerColour2"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("RulerColour2") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("White")>  _
+        Public Property RulerTickColour() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("RulerTickColour"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("RulerTickColour") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
