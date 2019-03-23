@@ -28,25 +28,25 @@ Public Class RulerForm
         If IsHorzontal() Then
             Pos = p.X
             If FreezeCursorPos Then Pos = CursorLastPos
-            g.DrawLine(New Pen(Color.White, 1), Pos, Me.Height, Pos, 0)
+            g.DrawLine(New Pen(My.Settings.RulerHighlightColour, 1), Pos, Me.Height, Pos, 0)
 
             Dim centerFormat As New StringFormat()
             centerFormat.Alignment = StringAlignment.Center
             centerFormat.LineAlignment = StringAlignment.Center
             Dim textSize = g.MeasureString((Pos - HorizontalSpacing).ToString, New Font("Courier New", 9))
             If FlipDirection Then
-                g.FillRectangle(New SolidBrush(Color.White), Pos - (textSize.Width / 2), 22, textSize.Width, 14)
-                g.DrawString((Pos - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.Black), New Rectangle(Pos - 20, 22, 40, 15), centerFormat)
+                g.FillRectangle(New SolidBrush(My.Settings.RulerHighlightColour), Pos - (textSize.Width / 2), 22, textSize.Width, 14)
+                g.DrawString((Pos - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerHightlightTextColour), New Rectangle(Pos - 20, 22, 40, 15), centerFormat)
             Else
-                g.FillRectangle(New SolidBrush(Color.White), Pos - (textSize.Width / 2), 4, textSize.Width, 14)
-                g.DrawString((Pos - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.Black), New Rectangle(Pos - 20, 3, 40, 15), centerFormat)
+                g.FillRectangle(New SolidBrush(My.Settings.RulerHighlightColour), Pos - (textSize.Width / 2), 4, textSize.Width, 14)
+                g.DrawString((Pos - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerHightlightTextColour), New Rectangle(Pos - 20, 3, 40, 15), centerFormat)
             End If
 
 
         Else
             Pos = p.Y
             If FreezeCursorPos Then Pos = CursorLastPos
-            g.DrawLine(New Pen(Color.White, 1), Me.Width, Pos, 0, Pos)
+            g.DrawLine(New Pen(My.Settings.RulerHighlightColour, 1), Me.Width, Pos, 0, Pos)
 
 
             Dim textSize = g.MeasureString((Pos - VerticalSpacing).ToString, New Font("Courier New", 9))
@@ -54,15 +54,15 @@ Public Class RulerForm
                 Dim leftFormat As New StringFormat()
                 leftFormat.Alignment = StringAlignment.Near
                 leftFormat.LineAlignment = StringAlignment.Near
-                g.FillRectangle(New SolidBrush(Color.White), 1, Pos - 14, textSize.Width - 3, 13)
-                g.DrawString((Pos - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.Black), New Rectangle(0, Pos - 15, 40, 15), leftFormat)
+                g.FillRectangle(New SolidBrush(My.Settings.RulerHighlightColour), 1, Pos - 14, textSize.Width - 3, 13)
+                g.DrawString((Pos - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerHightlightTextColour), New Rectangle(0, Pos - 15, 40, 15), leftFormat)
 
             Else
                 Dim rightFormat As New StringFormat()
                 rightFormat.Alignment = StringAlignment.Far
                 rightFormat.LineAlignment = StringAlignment.Far
-                g.FillRectangle(New SolidBrush(Color.White), Me.Width - textSize.Width + 1, Pos - 14, textSize.Width - 2, 13)
-                g.DrawString((Pos - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.Black), New Rectangle(0, Pos - 15, 40, 15), rightFormat)
+                g.FillRectangle(New SolidBrush(My.Settings.RulerHighlightColour), Me.Width - textSize.Width + 1, Pos - 14, textSize.Width - 2, 13)
+                g.DrawString((Pos - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerHightlightTextColour), New Rectangle(0, Pos - 15, 40, 15), rightFormat)
 
             End If
 
@@ -93,10 +93,10 @@ Public Class RulerForm
                     If I Mod 20 = FixOffsetSpace Then High = 15
                     If I Mod 100 = HorizontalSpacing And (I - HorizontalSpacing) <> 0 Then
                         High = 20
-                        g.DrawString((I - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.White), New Rectangle(I - 20, 22, 40, 15), centerFormat)
+                        g.DrawString((I - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerNumberColour), New Rectangle(I - 20, 22, 40, 15), centerFormat)
                     End If
                     If I = HorizontalSpacing Then
-                        P = New Pen(Color.White)
+                        P = New Pen(My.Settings.RulerNumberColour)
                         High = MaxHeight
                     End If
 
@@ -110,10 +110,10 @@ Public Class RulerForm
                     If I Mod 20 = HorizontalSpacing Then High = 15
                     If I Mod 100 = HorizontalSpacing And (I - HorizontalSpacing) <> 0 Then
                         High = 20
-                        g.DrawString((I - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.White), New Rectangle(I - 20, 3, 40, 15), centerFormat)
+                        g.DrawString((I - HorizontalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerNumberColour), New Rectangle(I - 20, 3, 40, 15), centerFormat)
                     End If
                     If I = HorizontalSpacing Then
-                        P = New Pen(Color.White)
+                        P = New Pen(My.Settings.RulerNumberColour)
                         High = MaxHeight
                     End If
 
@@ -138,10 +138,10 @@ Public Class RulerForm
                     If I Mod 20 = FixOffsetSpace Then Wide = 15
                     If I Mod 100 = VerticalSpacing And (I - VerticalSpacing) <> 0 Then
                         Wide = MaxWidth
-                        g.DrawString((I - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.White), New Rectangle(0, I - 15, 40, 15), leftFormat)
+                        g.DrawString((I - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerNumberColour), New Rectangle(0, I - 15, 40, 15), leftFormat)
                     End If
                     If I = VerticalSpacing Then
-                        P = New Pen(Color.White)
+                        P = New Pen(My.Settings.RulerNumberColour)
                         Wide = MaxWidth
                     End If
 
@@ -157,10 +157,10 @@ Public Class RulerForm
                     If I Mod 20 = FixOffsetSpace Then Wide = 15
                     If I Mod 100 = VerticalSpacing And (I - VerticalSpacing) <> 0 Then
                         Wide = MaxWidth
-                        g.DrawString((I - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(Color.White), New Rectangle(0, I - 15, 40, 15), rightFormat)
+                        g.DrawString((I - VerticalSpacing).ToString, New Font("Courier New", 9), New SolidBrush(My.Settings.RulerNumberColour), New Rectangle(0, I - 15, 40, 15), rightFormat)
                     End If
                     If I = VerticalSpacing Then
-                        P = New Pen(Color.White)
+                        P = New Pen(My.Settings.RulerNumberColour)
                         Wide = MaxWidth
                     End If
 

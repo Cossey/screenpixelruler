@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Cancel" xml:space="preserve">
+    <value>Waiho</value>
+  </data>
   <data name="ChangeLangageTitle" xml:space="preserve">
     <value>Reo</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="No" xml:space="preserve">
     <value>Kāo</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ka Pai</value>
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Āe</value>

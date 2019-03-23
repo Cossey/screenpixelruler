@@ -13,6 +13,8 @@ Module Language
     Sub SetNativeDialogLanguage()
         MessageBoxManager.No = My.Resources.No
         MessageBoxManager.Yes = My.Resources.Yes
+        MessageBoxManager.OK = My.Resources.Ok
+        MessageBoxManager.Cancel = My.Resources.Cancel
         MessageBoxManager.Register()
     End Sub
 

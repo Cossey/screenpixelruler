@@ -61,6 +61,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Cancel.
+        '''</summary>
+        Friend ReadOnly Property Cancel() As String
+            Get
+                Return ResourceManager.GetString("Cancel", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Language.
         '''</summary>
         Friend ReadOnly Property ChangeLangageTitle() As String
@@ -84,6 +93,15 @@ Namespace My.Resources
         Friend ReadOnly Property No() As String
             Get
                 Return ResourceManager.GetString("No", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to OK.
+        '''</summary>
+        Friend ReadOnly Property Ok() As String
+            Get
+                Return ResourceManager.GetString("Ok", resourceCulture)
             End Get
         End Property
         

@@ -104,13 +104,49 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("White")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Black")>  _
         Public Property RulerTickColour() As Global.System.Drawing.Color
             Get
                 Return CType(Me("RulerTickColour"),Global.System.Drawing.Color)
             End Get
             Set
                 Me("RulerTickColour") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("White")>  _
+        Public Property RulerHighlightColour() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("RulerHighlightColour"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("RulerHighlightColour") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("White")>  _
+        Public Property RulerNumberColour() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("RulerNumberColour"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("RulerNumberColour") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Black")>  _
+        Public Property RulerHightlightTextColour() As Global.System.Drawing.Color
+            Get
+                Return CType(Me("RulerHightlightTextColour"),Global.System.Drawing.Color)
+            End Get
+            Set
+                Me("RulerHightlightTextColour") = value
             End Set
         End Property
     End Class
