@@ -23,6 +23,7 @@ Partial Class RulerForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RulerForm))
         Me.tmrPosition = New System.Windows.Forms.Timer(Me.components)
         Me.RulerMenu = New System.Windows.Forms.ContextMenu()
         Me.MenuOptions = New System.Windows.Forms.MenuItem()
@@ -43,39 +44,35 @@ Partial Class RulerForm
         'MenuOptions
         '
         Me.MenuOptions.Index = 0
-        Me.MenuOptions.Text = "&Options"
-        Me.MenuOptions.Visible = False
+        resources.ApplyResources(Me.MenuOptions, "MenuOptions")
         '
         'MenuAbout
         '
         Me.MenuAbout.Index = 1
-        Me.MenuAbout.Text = "&About"
+        resources.ApplyResources(Me.MenuAbout, "MenuAbout")
         '
         'MenuItem3
         '
         Me.MenuItem3.Index = 2
-        Me.MenuItem3.Text = "-"
+        resources.ApplyResources(Me.MenuItem3, "MenuItem3")
         '
         'MenuExit
         '
         Me.MenuExit.Index = 3
-        Me.MenuExit.Text = "E&xit"
+        resources.ApplyResources(Me.MenuExit, "MenuExit")
         '
-        'frmRuler
+        'RulerForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(639, 40)
         Me.ControlBox = False
         Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(639, 40)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(639, 40)
-        Me.Name = "frmRuler"
+        Me.Name = "RulerForm"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.TopMost = True

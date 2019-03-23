@@ -117,83 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="tmrPosition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="RulerMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>131, 17</value>
-  </metadata>
-  <data name="MenuOptions.Text" xml:space="preserve">
-    <value>&amp;Options</value>
-  </data>
-  <data name="MenuAbout.Text" xml:space="preserve">
-    <value>&amp;About</value>
-  </data>
-  <data name="MenuItem3.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="MenuExit.Text" xml:space="preserve">
-    <value>E&amp;xit</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>mi</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="LogoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAEsCAYAAACxGPHPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAA5FJREFUeF7t3T1oFEEYxvErBAvBwkKwECwsBAvBwkKwsLCwECwECwvBQhC0EC0E
+        CwslSIiiQQmiEkREvURNlBAkqIeI8SMYjSYaA1r4QdQkoqJ28zh7t5fs7Q04uDlvjP+BF5K7JPvkN+/s
+        Ve9d7ugz6dCA1PhYangk7e+T9j2Q9t6T9tyVdt+Rdt6WdhSkbTelrT3SluvS5m5pU5e08Zq0oVNaf0Va
+        d0la2yatuSitPm+06pzRyrNGK84YLW81WnbaaOlJoyUnjBa3GC06brSw2WjBEaP5h43mNRnNbTSac9Bo
+        doPRrANGdQuYy+X8CkEEEUQQQQQRRBBBBP97QaeMbyFIDyKIIIIIIogggggiiGDGgE4Z30KQHkQQQQQR
+        RBBBBBFEEMGMAZ0yvoUgPYgggggiiCCCCCKIIIIZAzplfAtBehBBBBGsDDis0no+4gh4XxqNn4++SAfs
+        +Bo/Z1dTLQSvfpbG3kuXJ9wBe75LA09Lgt3fpP7+qYC7ov/sXUlw+5D9+k0Ne9AZ8KH04WNii+3PR4rl
+        gJ02cHNiiy22GmvVg86AkUoyoH181IYqB7S/VhGw/YuU7/qbgtMccPoFp3mLnVqu8g4YH5LWOOApGy59
+        SPrs7akYsNem+80h+eNTnF6DL6YCNryOH4yWFau4zdyQ7A1gcrV31/AU80oyowSrEodW9CCnGEEEEUQQ
+        QQQRRBBBBDMGdMr4FoL0IIIIIogggggiiCCCCGYM6JTxLQTpQQQRRBBBBBFEEEEEEcwY0CnjWwjSgwgi
+        iCCCCCKIIIIIIpgxoFPGtxCkBxFEEMFEwCFpLB4ejVbBPlYRsN4z7r0/peFXseBI6UIXEgGDmXEvb3F0
+        ncmAIc24RwGPvbVXGE9scUgz7i12q6KVTx6SUGbcOyaK2dSWPsUhzLhHh0S2yj1Y+CHdsqGTh6R+M+72
+        ArblqlYyIDPu//4rSYiCVYlDK3qQU4wggggiiCCCCCKIIIIZAzplfAtBehBBBBFEEEEEEUQQQQQzBnTK
+        +BaC9CCCCCKIIIIIIogggghmDOiU8S0E6UEEEUQQQQQRRBBBBBHMGNAp41sI0oMIIohgZcDy+G60hoZT
+        Aes94178BOjy+O4T6ZP9NtwZ93TAYGbcB6feyqBii0OacXcKhjLjnjzF+fHEp5CHMOP+0v7RyTeCiAXD
+        mXGPBO02Jt9KI32bYcZ9RrySBCdYlTioyukXf+Jg8j/xX6oAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>639, 40</value>
+  <data name="LabelVersion.Text" xml:space="preserve">
+    <value>Whakaaturanga {0}</value>
   </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>639, 40</value>
+  <data name="OKButton.Text" xml:space="preserve">
+    <value>&amp;Ka Pai</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>639, 40</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
-  <data name="&gt;&gt;tmrPosition.Name" xml:space="preserve">
-    <value>tmrPosition</value>
-  </data>
-  <data name="&gt;&gt;tmrPosition.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RulerMenu.Name" xml:space="preserve">
-    <value>RulerMenu</value>
-  </data>
-  <data name="&gt;&gt;RulerMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuOptions.Name" xml:space="preserve">
-    <value>MenuOptions</value>
-  </data>
-  <data name="&gt;&gt;MenuOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuAbout.Name" xml:space="preserve">
-    <value>MenuAbout</value>
-  </data>
-  <data name="&gt;&gt;MenuAbout.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuItem3.Name" xml:space="preserve">
-    <value>MenuItem3</value>
-  </data>
-  <data name="&gt;&gt;MenuItem3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuExit.Name" xml:space="preserve">
-    <value>MenuExit</value>
-  </data>
-  <data name="&gt;&gt;MenuExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>RulerForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Mō {0}</value>
   </data>
 </root>

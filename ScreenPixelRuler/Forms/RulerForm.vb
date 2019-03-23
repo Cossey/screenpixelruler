@@ -343,4 +343,9 @@ Public Class RulerForm
     Private Sub MenuAbout_Click(sender As Object, e As EventArgs) Handles MenuAbout.Click
         AboutForm.Show()
     End Sub
+
+    Private Sub MenuOptions_Click(sender As Object, e As EventArgs) Handles MenuOptions.Click
+        OptionsForm.Show()
+    End Sub
+
 End Class

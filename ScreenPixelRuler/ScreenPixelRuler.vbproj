@@ -74,16 +74,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutForm.Designer.vb">
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Forms\AboutForm.Designer.vb">
       <DependentUpon>AboutForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="AboutForm.vb">
+    <Compile Include="Forms\AboutForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RulerForm.vb">
+    <Compile Include="Forms\OptionsForm.Designer.vb">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionsForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RulerForm.Designer.vb">
+    <Compile Include="Forms\RulerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RulerForm.Designer.vb">
       <DependentUpon>RulerForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -104,10 +111,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutForm.resx">
+    <EmbeddedResource Include="Forms\AboutForm.mi.resx">
       <DependentUpon>AboutForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RulerForm.resx">
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.mi.resx">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RulerForm.mi.resx">
+      <DependentUpon>RulerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RulerForm.resx">
       <DependentUpon>RulerForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
