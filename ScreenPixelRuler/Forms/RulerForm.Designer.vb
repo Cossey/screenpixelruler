@@ -40,26 +40,27 @@ Partial Class RulerForm
         'RulerMenu
         '
         Me.RulerMenu.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuOptions, Me.MenuAbout, Me.MenuItem3, Me.MenuExit})
+        resources.ApplyResources(Me.RulerMenu, "RulerMenu")
         '
         'MenuOptions
         '
-        Me.MenuOptions.Index = 0
         resources.ApplyResources(Me.MenuOptions, "MenuOptions")
+        Me.MenuOptions.Index = 0
         '
         'MenuAbout
         '
-        Me.MenuAbout.Index = 1
         resources.ApplyResources(Me.MenuAbout, "MenuAbout")
+        Me.MenuAbout.Index = 1
         '
         'MenuItem3
         '
-        Me.MenuItem3.Index = 2
         resources.ApplyResources(Me.MenuItem3, "MenuItem3")
+        Me.MenuItem3.Index = 2
         '
         'MenuExit
         '
-        Me.MenuExit.Index = 3
         resources.ApplyResources(Me.MenuExit, "MenuExit")
+        Me.MenuExit.Index = 3
         '
         'RulerForm
         '

@@ -341,11 +341,25 @@ Public Class RulerForm
     End Sub
 
     Private Sub MenuAbout_Click(sender As Object, e As EventArgs) Handles MenuAbout.Click
-        AboutForm.Show()
+        'Freeze Cursor Pos and Turn Off TopMost to workaround issue
+        'where Ruler steals focus or ends up on top of the form
+        Dim LastFreezeCursorPos = FreezeCursorPos
+        FreezeCursorPos = True
+        TopMost = False
+        AboutForm.ShowDialog()
+        FreezeCursorPos = LastFreezeCursorPos
+        TopMost = True
     End Sub
 
     Private Sub MenuOptions_Click(sender As Object, e As EventArgs) Handles MenuOptions.Click
-        OptionsForm.Show()
+        'Freeze Cursor Pos and Turn Off TopMost to workaround issue
+        'where Ruler steals focus or ends up on top of the form
+        Dim LastFreezeCursorPos = FreezeCursorPos
+        FreezeCursorPos = True
+        TopMost = False
+        OptionsForm.ShowDialog()
+        FreezeCursorPos = LastFreezeCursorPos
+        TopMost = True
     End Sub
 
 End Class
