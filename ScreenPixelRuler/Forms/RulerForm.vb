@@ -242,9 +242,9 @@ Public Class RulerForm
 
     Protected Sub PositionRuler(hPos As Integer, vPos As Integer)
         If IsHorzontal() Then
-            Me.Left = hPos - 10
+            Me.Left = (hPos - 10) - My.Settings.PositionOffset
         Else
-            Me.Top = vPos - 20
+            Me.Top = (vPos - 20) - My.Settings.PositionOffset
         End If
     End Sub
 
