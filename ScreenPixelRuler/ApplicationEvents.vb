@@ -12,6 +12,8 @@ Namespace My
         Protected Overrides Function OnInitialize(commandLineArgs As ReadOnlyCollection(Of String)) As Boolean
             Threading.Thread.CurrentThread.CurrentUICulture = New Globalization.CultureInfo(My.Settings.Language)
 
+            SetNativeDialogLanguage()
+
             Return MyBase.OnInitialize(commandLineArgs)
         End Function
 
