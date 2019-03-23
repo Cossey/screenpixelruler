@@ -118,19 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChangeLangageTitle" xml:space="preserve">
-    <value>Language</value>
+    <value>Reo</value>
   </data>
   <data name="ChangeLanguageMessage" xml:space="preserve">
-    <value>You must restart the application to change language. Restart now?</value>
+    <value>Me tīmata anō koe i te tono ki te huri i te reo. Tīmata anō inaianei?</value>
   </data>
   <data name="No" xml:space="preserve">
-    <value>No</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RulerImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RulerImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Kāo</value>
   </data>
   <data name="Yes" xml:space="preserve">
-    <value>Yes</value>
+    <value>Āe</value>
   </data>
 </root>

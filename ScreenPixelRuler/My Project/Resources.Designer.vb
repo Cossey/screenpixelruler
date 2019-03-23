@@ -61,12 +61,48 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Language.
+        '''</summary>
+        Friend ReadOnly Property ChangeLangageTitle() As String
+            Get
+                Return ResourceManager.GetString("ChangeLangageTitle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to You must restart the application to change language. Restart now?.
+        '''</summary>
+        Friend ReadOnly Property ChangeLanguageMessage() As String
+            Get
+                Return ResourceManager.GetString("ChangeLanguageMessage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to No.
+        '''</summary>
+        Friend ReadOnly Property No() As String
+            Get
+                Return ResourceManager.GetString("No", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property RulerImage() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("RulerImage", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Yes.
+        '''</summary>
+        Friend ReadOnly Property Yes() As String
+            Get
+                Return ResourceManager.GetString("Yes", resourceCulture)
             End Get
         End Property
     End Module
