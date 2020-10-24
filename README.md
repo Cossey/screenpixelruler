@@ -1,10 +1,14 @@
+**This version of Screen Pixel Ruler is now retired and archived. The next generation of this tool is developed in C# [available here](http://github.com/Cossey/ScreenPixelRuler2).**
+
 # Screen Pixel Ruler
 An open source and free screen pixel ruler based on .NET that is a clone of *MioPlanet PixelRuler*.
 
 ## Installation
-[`choco install screenpixelruler`](https://www.chocolatey.org/about)
+> It is recommended to use [Screen Pixel Ruler 2](http://github.com/Cossey/ScreenPixelRuler2) instead of this version.
 
-*or download the software installer from the [Releases Page](https://github.com/Cossey/screenpixelruler/releases)*
+[`choco install screenpixelruler --version=1.0.0.0`](https://www.chocolatey.org/about)
+
+Software installer from the [Releases Page](https://github.com/Cossey/screenpixelruler/releases)
 
 ## How to Use
 * Click and Drag the ruler to move it. 
